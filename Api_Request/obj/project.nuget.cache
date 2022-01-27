@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "dgSpecHash": "RceM7jiAliYdn7cAjX7Rs6vjfTf0t2oyBYAr6cewAK5UMJktBf4XtnBsKXyux4mX7Tk/YD7tSWW2gB4n8b9W1w==",
+  "success": true,
+  "projectFilePath": "/Users/ekaterinasugaj/RiderProjects/Api_Request/Api_Request/Api_Request.csproj",
+  "expectedPackageFiles": [
+    "/Users/ekaterinasugaj/.nuget/packages/dynamicjson/1.2.0/dynamicjson.1.2.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/microsoft.codecoverage/17.1.0-preview-20211130-02/microsoft.codecoverage.17.1.0-preview-20211130-02.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/microsoft.net.test.sdk/17.1.0-preview-20211130-02/microsoft.net.test.sdk.17.1.0-preview-20211130-02.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/microsoft.testplatform.objectmodel/17.1.0-preview-20211130-02/microsoft.testplatform.objectmodel.17.1.0-preview-20211130-02.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/microsoft.testplatform.testhost/17.1.0-preview-20211130-02/microsoft.testplatform.testhost.17.1.0-preview-20211130-02.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/microsoft.win32.systemevents/6.0.2-mauipre.1.22054.8/microsoft.win32.systemevents.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/nunit/3.13.2/nunit.3.13.2.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/restsharp/106.10.1/restsharp.106.10.1.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/saltstack_api_helper/1.0.2.9/saltstack_api_helper.1.0.2.9.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/selenium.webdriver/4.1.0/selenium.webdriver.4.1.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/selenium.webdriver.chromedriver/97.0.4692.7100/selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/system.drawing.common/6.0.2-mauipre.1.22054.8/system.drawing.common.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/validation/2.4.18/validation.2.4.18.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg.sha512",
+    "/Users/ekaterinasugaj/.nuget/packages/xunit.skippablefact/1.4.13/xunit.skippablefact.1.4.13.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SaltStack_API_Helper 1.0.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SaltStack_API_Helper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
