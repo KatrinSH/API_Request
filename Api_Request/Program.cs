@@ -21,7 +21,7 @@ public static class ApiHelper
         request.RequestFormat = DataFormat.Json;
         if (filePath != null)
         {
-            request.AddFile("file", filePath, "image/jpeg");
+            request.AddFile("file", @filePath, "image/jpeg");
         }
         
 
@@ -35,7 +35,7 @@ public static class ApiHelper
         RestRequest request = new RestRequest(Method.GET);
         IRestResponse response = restClient.Execute(request);
         byte[] bytes = response.RawBytes; //достаем биты из ответа
-        bytes.SaveAs($"/Users/ekaterinasugaj/Downloads/{nameFile}"); // сохраняем в файл
+        bytes.SaveAs($"../../../assets/{nameFile}"); // сохраняем в файл
 
         return HandlerApiError(response);
     }

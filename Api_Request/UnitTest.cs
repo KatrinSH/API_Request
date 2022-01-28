@@ -42,7 +42,7 @@ public class UnitTest
         };
 
         ApiHelper.SendApiRequest(null, headerUpload,
-            "https://api.newbookmodels.com/api/images/upload/", Method.POST, "/Users/ekaterinasugaj/Downloads/picture.png");
+            "https://api.newbookmodels.com/api/images/upload/", Method.POST, "../../../assets/picture.png");
     }
 
     [Fact]
@@ -52,6 +52,6 @@ public class UnitTest
         var responseDownlaodImages =
             ApiHelper.DownloadFile(
                 "https://storage.googleapis.com/ford-modeling-media/small/0ac6aeda-3a62-4d43-ac54-938534b674d2",
-                "picture1.png");
+                "Picture-download.png");
     }
 }

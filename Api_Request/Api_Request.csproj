@@ -23,4 +23,8 @@
       <Compile Remove="UnitTest1.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="assets" />
+    </ItemGroup>
+
 </Project>
