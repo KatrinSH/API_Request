@@ -1,10 +1,6 @@
 ﻿using RestSharp;
-using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V85.CacheStorage;
-using System.Collections.Generic;
-using System.Net;
-using NUnit.Framework;
-using Xunit;
+using RestSharp.Extensions;
+
 
 
 public static class ApiHelper
@@ -25,31 +21,33 @@ public static class ApiHelper
         request.RequestFormat = DataFormat.Json;
         if (filePath != null)
         {
-            request.AddFile("image", "/Users/ekaterinasugaj/Downloads/image.jpeg");
+            request.AddFile("file", filePath, "image/jpeg");
         }
         
 
-        IRestResponse response = client.Execute(request);//браузер выполни API запрос и сохранил в response
-        return  HandlerAPIError(response);
+        IRestResponse response = client.Execute(request); //браузер выполни API запрос и сохранил в response
+        return  HandlerApiError(response);
     }
 
-    public static IRestClient DownloadFile(string urlRequest, string nameFile)
+    public static string DownloadFile(string urlRequest, string nameFile)
     {
         RestClient restClient = new RestClient(@urlRequest);
-        var fileBytes = restClient.DownloadData(new RestRequest("#", Method.GET));
-        File.WriteAllBytes(Path.Combine("/Users/ekaterinasugaj/Downloads/", nameFile), fileBytes);
+        RestRequest request = new RestRequest(Method.GET);
+        IRestResponse response = restClient.Execute(request);
+        byte[] bytes = response.RawBytes; //достаем биты из ответа
+        bytes.SaveAs($"/Users/ekaterinasugaj/Downloads/{nameFile}"); // сохраняем в файл
 
-        return restClient;
+        return HandlerApiError(response);
     }
 
-    public static string HandlerAPIError(IRestResponse response)
+    public static string HandlerApiError(IRestResponse response) //обработчик API ошибок
     {
-        if(response.StatusCode == HttpStatusCode.OK)
+        if(response.IsSuccessful)
         {
             return response.Content;
         }
-        else
-        {
+        else {
+            Console.WriteLine(response.StatusCode);
             Console.WriteLine(response.ErrorMessage);
             Console.WriteLine(response.Content);
             throw new NotImplementedException(response.Content);
